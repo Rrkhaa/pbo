@@ -9,21 +9,20 @@ class Handphone {
     + Handphone(String merk, String model)
     + void nyalakan()
     + void matikan()
-    + void telepon(String nomor)
+    + void kirimPesan(string nomer Tujuan,String Pesan)
+    + void kirimPesan(string nomer Tujuan1,string nomer Tujuan2,String Pesan)
+    + void kirimPesan(string [] daftarNomer,String pesan)
+    
 }
 
-class HandphonePintar {
-    + HandphonePintar(String merk, String model)
-    + void nyalakan()
-    + void matikan()
-    + void telepon(String nomor)
-}
+
 
 class Smartphone {
     + Smartphone(String merk, String model)
     + void nyalakan()
     + void matikan()
-    + void telepon(String nomor)
+    + void kirimPesan(string nomor tujuan, string pesan)
+    + void KirimPesan(String nomor tujuan,string subjek, String pesan)
     + void aksesInternet()
 }
 
@@ -35,8 +34,8 @@ class FeaturePhone {
     + void mainGameSnake()
 }
 
-Handphone <|-- HandphonePintar
-HandphonePintar <|-- Smartphone
+
+Handphone <|-- Smartphone
 Handphone <|-- FeaturePhone
 Main --> Handphone : menggunakan
 Main --> Smartphone : menggunakan
